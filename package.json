@@ -1,0 +1,32 @@
+{
+  "name": "botas",
+  "version": "1.0.0",
+  "description": "Bot TIGO para Asistencia y Soporte",
+  "main": "src/main/main.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkunchain/BoTAS.git"
+  },
+  "keywords": [
+    "Bot",
+    "soporte",
+    "asistencia",
+    "tecnica",
+    "centro",
+    "de",
+    "servicios"
+  ],
+  "author": "Luis Fernando Prieto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkunchain/BoTAS/issues"
+  },
+  "homepage": "https://github.com/darkunchain/BoTAS#readme",
+  "devDependencies": {
+    "electron": "^31.3.0"
+  }
+}

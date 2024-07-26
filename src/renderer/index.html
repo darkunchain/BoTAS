@@ -1,0 +1,28 @@
+<!-- src/renderer/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BoTAS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="bot-container">
+      <header class="bot-header">
+        <img src="../../assets/mono-1.png" alt="Bot Logo" class="bot-logo">
+        <h2>Hola, soy BoTAS</h2>
+        <p>Bot TIGO para Asistencia y Soporte</p>        
+        <h3>soy tu asistente Virtual.</h3>
+      </header>
+      <main class="bot-main">
+        <div class="bot-messages" id="bot-messages">
+          <!-- Messages will be displayed here -->
+        </div>
+        <div class="bot-input">
+          <input type="text" id="user-input" placeholder="Type a message...">
+          <button id="send-button">Enviar</button>
+        </div>
+      </main>
+    </div>
+    <script src="render.js"></script>
+  </body>
+</html>
