@@ -1,12 +1,12 @@
 
 ///////////////// Recibir el nombre de usuario desde el proceso principal
 window.electron.receiveUserData((data) => {
-    askIfUserIsCorrect(data.username);
+    mensajeBienvenida(data.username);
 });
 
 function askIfUserIsCorrect(username) {
     const messagesContainer = document.getElementById('bot-messages');
-    const welcomeMessage = `hola, buen dia como estas hoy? segun veo su nombre de usuario es: ${username}. esto es correcto?`;
+    const welcomeMessage = `Segun veo su nombre de usuario es: ${username}. esto es correcto?`;
     typeEffect(welcomeMessage, messagesContainer, () => {
         const buttonContainer = document.createElement('div');
         buttonContainer.classList.add('button-container');
@@ -29,6 +29,14 @@ function askIfUserIsCorrect(username) {
         buttonContainer.appendChild(yesButton);
         buttonContainer.appendChild(noButton);
         messagesContainer.appendChild(buttonContainer);
+    });
+}
+
+function mensajeBienvenida(username) {
+    const messagesContainer = document.getElementById('bot-messages');
+    const welcomeMessage = `Bienvenido a la mesa de servicio TIGO, es un gusto para mi saludarlo el dia de hoy.`;
+    typeEffect(welcomeMessage, messagesContainer, () => {
+        askIfUserIsCorrect(username);
     });
 }
 
