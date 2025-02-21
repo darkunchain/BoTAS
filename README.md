@@ -1,4 +1,5 @@
 # BoTAS
+
 Bot TIGO para Asistencia y Soporte
 
 Instrucciones de inicio:
@@ -42,3 +43,11 @@ BoTAS/
 ├── .gitignore
 ├── package.json
 └── README.md
+
+## para iniciar el front
+
+npm start
+
+## para iniciar en modo desarrollo
+
+npm test
