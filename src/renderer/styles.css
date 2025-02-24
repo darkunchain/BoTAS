@@ -140,6 +140,15 @@ button:hover {
   padding: 10px;
   overflow-y: auto;
   border-bottom: 1px solid #ddd;
+  color: blue;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.user-message {
+  color: green; /* Color verde */
+  text-align: right; /* Alinear a la derecha */
+  margin: 10px 0;
 }
 
 .bot-input {
@@ -167,4 +176,34 @@ button:hover {
 
 .bot-input button:hover {
   background-color: #0056b3;
+}
+
+/* Estilo para el mensaje de "procesando" */
+.processing-message {
+  color: gray; /* Color gris */
+  font-style: italic; /* Texto en cursiva */
+  margin: 10px 0; /* Espaciado */
+}
+
+/* Animación para los puntos */
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.processing-message .dot {
+  display: inline-block;
+  animation: blink 1.4s infinite;
+}
+
+.processing-message .dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.processing-message .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.processing-message .dot:nth-child(3) {
+  animation-delay: 0.4s;
 }
